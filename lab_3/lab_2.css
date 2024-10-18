@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('https://example.com/background-image.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 32px;
+    color: #0066cc;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #009933;
+    margin-top: 25px;
+}
+
+/* Стили для параграфов */
+p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+/* Стили для списков */
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px; 
+}
+
+li {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+/* Стили для ссылок */
+a {
+    font-size: 16px;
+    color: #ffd900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1bde22d0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Дополнительные стили для украшения странички */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #968d8d;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Стили для основного контейнера */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+/* Стили для левой части контента */
+.content-left {
+    width: 50%;
+    padding: 30px;
+    background: #7db475c7;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.header-nav{
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.header-nav a {
+    font-size: 18px; /* Tăng cỡ chữ */
+    text-decoration: none;
+    color: #333; /* Màu chữ, bạn có thể thay đổi */
+    font-weight: bold; /* Làm đậm chữ */
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #0066cc; /* Màu khi di chuột qua, bạn có thể thay đổi */
+    background-color: #f0f0f0; /* Màu nền khi di chuột qua */
+    border-radius: 5px;
+}
+
+/* Стили для правой части контента */
+.content-right {
+    width: 50%;
+    padding: 20px;
+    background: #7697dfe8;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+/* Стили для изображения */
+.content-right img {
+    width: 100%; /* Thay đổi từ width thành max-width */
+    height: auto;
+    margin: 10px; /* Chỉ để margin trên và dưới */
+    border-radius: 10px; /* Thêm bo góc cho ảnh */
+}
+
+.container {
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    margin: 20px;
+}
+.container-2 {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3c;
+}
+
+.container-3 {
+    background-color: #f0f0f0; /* Nền màu xám nhạt, bạn có thể thay đổi */
+    border: 2px solid #333; /* Viền màu xám đậm, bạn có thể thay đổi */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db; /* Nền màu xanh, bạn có thể thay đổi */
+    margin: 20px;
+}
+
+.position-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 50px auto;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+    top: 50px;
+    left: 50px;
+}
+
+.blue {
+    background-color: blue;
+    top: 100px;
+    left: 100px;
+}
+
+.green {
+    background-color: green;
+    top: 150px;
+    left: 150px;
+}
+
+.fixed-cat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
