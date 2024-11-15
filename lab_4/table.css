@@ -1,0 +1,147 @@
+.header-nav{
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.header-nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding:5px 10px;
+    transition: all 0.3s ease;
+}
+
+.header-nav a:hover{
+    color: #0066cc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #968d8d;
+}
+h2{
+    text-align: center;
+}
+/* Общий стиль для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Стиль для заголовка таблицы */
+caption {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color:#0066cc;
+}
+
+/* Стиль для заголовков столбцов */
+th {
+    background-color: #a3e2e8;
+    padding: 10px;
+}
+
+/* Стиль для ячеек */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #934747;
+}
+
+/* Разный фон для строк */
+tr:nth-child(3n) {
+    background-color: #dddcfb;
+}
+
+#studentForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    max-width: 200px;
+    margin: auto;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+button{
+    text-align: center;
+    background-color: #5652d1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button :hover{
+    background-color: #0066cc;
+    color: greenyellow;
+}
+
+tr:nth-child(3n+1) {
+    background-color: #fdc2ff;
+}
+tr:nth-child(3n+2) {
+    background-color: #e4f7ba;
+}
+
+
+/* Выравнивание заголовков столбцов по левому краю */
+th {
+    text-align: left;
+}
+
+.name{
+    width: 10px 0;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 5%; /* Độ rộng cột ID */
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 20%; /* Độ rộng cột tên sinh viên */
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 20%; /* Số sổ điểm */
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 10%; /* Nhóm */
+}
+th:nth-child(5), td:nth-child(5) {
+    width: 5%; /* Giới tính */
+}
+th:nth-child(6), td:nth-child(6) {
+    width: 10%; /* Tuổi */
+}
+th:nth-child(7), td:nth-child(7) {
+    width: 15%; /* Hình thức học */
+}
+th:nth-child(8), td:nth-child(8) {
+    width: 10%; /* Ngành học */
+}
+
+td:nth-child(6), th:nth-child(6),
+th:nth-child(7), th:nth-child(8), 
+td:nth-child(7), td:nth-child(8),
+td:nth-child(5), th:nth-child(5){
+    text-align: center;
+}

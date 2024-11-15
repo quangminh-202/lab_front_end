@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="header-nav">
+            <a href="lab_2.html">Основная страница</a>
+            <a href="lab_3.html">Позиционирование элементов</a>
+            <a href="table.html"> Таблица</a>
+        </nav>
+    </div>
+    <table id="studentTable">
+        <caption>Список студентов</caption>
+      <thead>
+         <tr>
+            <th>ID</th>
+            <th class="name">ФИО</th>
+            <th>Номер зачётной книжки</th>
+            <th>Номер группы</th>
+            <th>Пол</th>
+            <th>Возраст</th>
+            <th>Форма поступления</th>
+            <th>Название направления</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>01</td>
+            <td class="name">Ву Дык Хань</td>
+            <td>2306</td>
+            <td>6413</td>
+            <td>М</td>
+            <td>23</td>
+            <td>Очная</td>
+            <td>ИБАС</td>
+         </tr>
+         <tr>
+            <td>02</td>
+            <td class="name">Чан Куанг Минь</td>
+            <td>1234</td>
+            <td>6313</td>
+            <td>М</td>
+            <td>23</td>
+            <td>Очная</td>
+            <td>ИБАС</td>
+         </tr>
+         <tr>
+            <td>03</td>
+            <td class="name">Чан Ван Хоунг</td>
+            <td>9612</td>
+            <td>6113</td>
+            <td>М</td>
+            <td>22</td>
+            <td>Очная</td>
+            <td>ИБАС</td>
+         </tr>
+         <tr>
+            <td>04</td>
+            <td class="name">Ле Лос Тхо</td>
+            <td>5492</td>
+            <td>6413</td>
+            <td>М</td>
+            <td>23</td>
+            <td>Очная</td>
+            <td>ИБАС</td>
+         </tr>
+         <tr>
+            <td>05</td>
+            <td class="name">Чан Минь Ньят</td>
+            <td>5036</td>
+            <td>6113</td>
+            <td>М</td>
+            <td>21</td>
+            <td>Очная</td>
+            <td>ИБАС</td>
+         </tr>
+         <tr>
+            <td>06</td>
+            <td class="name">Нгуен Дык Тханг</td>
+            <td>1297</td>
+            <td>6513</td>
+            <td>М</td>
+            <td>25</td>
+            <td>Очная</td>
+            <td>ИБАС</td>
+         </tr>
+      </tbody>
+    </table>
+
+    <form id="studentForm">
+      <h2>Добавить студентов</h1>
+        <label for="studentID"> ID:</label>
+        <input type="text" id="studentID" name="studentID" required><br>
+
+        <label for="studentName"> ФИО: </label>
+        <input type="text" id="fullName" name="fullName" required><br>
+        
+        <label for="studentBook">Номер зачётной книжки: </label>
+        <input type="text" id="studentBook" name="studentBook" required><br>
+
+        <label for="studentGroup"> Номер группы: </label>
+        <input type="text" id="studentGroup" name="studentGroup" required><br>
+        
+        <label for="studentGender">Пол:</label>
+        <label><input type="radio" name="studentGender" value="М">Муж</label>
+        <label><input type="radio" name="studentGender" value="Ж">Жен</label>
+        <label><input type="radio" name="studentGender" value="Other">Other</label><br>
+        
+
+        <label for="studentAge">Возраст: </label>
+        <input type="text" id="studentAge" name="studentAge" required><br>
+
+        <label for="admissionForm">Форма поступления: </label>
+        <input type="text" id="admissionForm" name="admissionForm" required><br>
+
+        <label for="direction">Название направления: </label>
+        <input type="text" id="direction" name="direction" required><br>
+
+        <button type="submit">Добавить</button>
+    </form>
+   
+    <script>
+        document.getElementById("studentForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của biểu mẫu
+
+            // Lấy dữ liệu từ các trường nhập liệu
+            const studentID = document.getElementById("studentID").value;
+            const fullName = document.getElementById("fullName").value;
+            const studentBook = document.getElementById("studentBook").value;
+            const studentGroup = document.getElementById("studentGroup").value;
+            const studentGender = document.querySelector('input[name="studentGender"]:checked')?.value || "Не указано";
+            const studentAge = document.getElementById("studentAge").value;
+            const admissionForm = document.getElementById("admissionForm").value;
+            const direction = document.getElementById("direction").value;
+
+            // Tạo một hàng mới cho bảng
+            const tableBody = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
+            const newRow = tableBody.insertRow();
+
+            // Thêm các ô vào hàng mới
+            newRow.insertCell(0).textContent = studentID;
+            newRow.insertCell(1).textContent = fullName;
+            newRow.insertCell(2).textContent = studentBook;
+            newRow.insertCell(3).textContent = studentGroup;
+            newRow.insertCell(4).textContent = studentGender;
+            newRow.insertCell(5).textContent = studentAge;
+            newRow.insertCell(6).textContent = admissionForm;
+            newRow.insertCell(7).textContent = direction;
+
+            // Xóa dữ liệu trong các trường nhập liệu sau khi thêm
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
