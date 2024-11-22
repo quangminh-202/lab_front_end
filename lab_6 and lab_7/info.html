@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info - Favorite Actor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="50">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Актерский проект</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Основная информация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Список фильмов</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar, scrollspy -->
+    <div class="d-flex">
+        <nav id="sidebar" class="flex-shrink-0 p-3 bg-light" style="width: 250px;">
+            <h5>Разделы</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#carousel">Карусель фотографий</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cards">Открытки с фильмами</a></li>
+                <li class="nav-item"><a class="nav-link" href="#collapse">Биография</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-fluid">
+            <!-- Carousel -->
+            <section id="carousel">
+                <div id="actorCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/anh1.jpg" class="d-block w-100" alt="Actor Photo 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/anh2.jpg" class="d-block w-100" alt="Actor Photo 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/anh3.jpg" class="d-block w-100" alt="Actor Photo 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#actorCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#actorCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Movie Cards -->
+            <section id="cards" class="mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="image/film1.jpg" class="card-img-top img-fluid" alt="Movie Poster 1">
+                            <div class="card-body">
+                                <h5 class="card-title"> Между нами, девочками (сериал 2013)</h5>
+                                <p class="card-text">
+                                    В провинциальном городе Тетюшеве живёт семья Кузнецовых-Сайко: 
+                                    Олеся (21 год, студентка художественного колледжа), её мама Елена 
+                                    (45 лет, начальник отдела снабжения в строительной компании) и 
+                                    бабушка Ираида Степановна (65 лет, исполнительница романсов и народных
+                                    песен в местной филармонии).У наших героинь разный характер и взгляды
+                                    на жизнь, но всех их, кроме родственных уз, объединяет отсутствие 
+                                    личного женского счастья. Супруг Ираиды Степановны давно умер. 
+                                    Муж Елены – отец Олеси – лет десять назад ушёл из семьи, и Елена 
+                                    так больше и не вышла замуж. Только у Олеси есть молодой человек – 
+                                    Никита, но его существование Олеся скрывает.Именно Никита становится 
+                                    причиной того, что устоявшийся уклад жизни в семье Кузнецовых рушится.
+                                    Олеся приводит Никиту домой и объявляет маме и бабушке, что они будут
+                                        жить вместе. Елена в ужасе. Ей не нравится Никита, и она начинает 
+                                        выживать его из квартиры.
+                                </p>
+                                <a href="https://www.kinopoisk.ru/series/893068/" class="btn btn-primary" target="_blank">Посмотреть на Кинопоиске</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="image/film2.jpg" class="card-img-top" alt="Movie Poster 2">
+                            <div class="card-body">
+                                <h5 class="card-title">СуперИвановы (сериал 2023 – ...)</h5>
+                                <p class="card-text">Женщины семьи Ивановых обладают удивительным 
+                                    даром — каждая своим. Дарина видит людей насквозь, её мама Тамара
+                                    Петровна умеет варить зелья, а дар дочери-подростка Кати зрителю 
+                                    ещё предстоит узнать. И только супруг Дарины, школьный учитель 
+                                    физики Валера, остаётся верен науке. Вскоре сарафанное радио разносит 
+                                    слухи о волшебном семействе, и Ивановы начинают помогать окружающим в 
+                                    решении их житейских проблем. Вот только помогут ли их способности 
+                                    разобраться с собственными семейными историями?
+                                </p>
+                                <a href="https://www.kinopoisk.ru/series/5255607/" class="btn btn-primary" target="_blank">Посмотреть на Кинопоиске</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="image/film3.jpg" class="card-img-top" alt="Movie Poster 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Преступление</h5>
+                                <p class="card-text">Расследование жестокого убийства 
+                                    молодой девушки оборачивается сложной психологической 
+                                    драмой, поднимает вопросы человеческих ценностей и смыслов, 
+                                    волнующих каждого: верность и предательство, цинизм и 
+                                    острадание, месть и смирение. Детективная захватывающая 
+                                    интрига, в ходе развития которой подозрение падает на каждого 
+                                    из главных героев, держит зрителя в постоянном напряжении до 
+                                    последнего кадра. Но один из основных вопросов, который ставит
+                                     фильм: удастся ли героям сохранить себя и остаться людьми?
+                                </p>
+                                <a href="https://www.kinopoisk.ru/series/5255607/" class="btn btn-primary" target="_blank">Посмотреть на Кинопоиске</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Collapsible Biography -->
+            <section id="collapse" class="mt-4">
+                <p>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#actorBio" aria-expanded="false" aria-controls="actorBio">
+                        Биография
+                    </button>
+                </p>
+                <div class="collapse" id="actorBio">
+                    <div class="card card-body">
+                        <p>
+                            <ul> 
+                            <p><b>Александр Никитин</b></p>
+                            <li>Карьера: Актер</li>
+                            <li>Рост: 1.95 м</li>
+                            <li>Дата рождения: 30 ноября, 1971 • Стрелец • 52 года</li>
+                            <li>Место рождения: Скрунда, СССР</li>
+                            <li>Жанры: мелодрама, детектив, драма</li>
+                            <li>Супруга Надежда Бахтина (развод)</li>
+                            <li>Всего фильмов 113, 1999 — 2023</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qfMtWR3ki9B6wBsU4iMIF6fElj/w5WNsHfL6Oxl16X0ghoqKN+BhDvd0hO2b4AOV" crossorigin="anonymous"></script>
+</body>
+</html>
